@@ -1,0 +1,122 @@
+@import "../App";
+
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 0.5rem 2rem;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    .nav-content{
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            list-style-type: none;
+
+            @media screen and (max-width: 790px) {
+                display: none;
+            }
+
+            li{
+                // margin: 0 1.5rem;
+
+                .menu-item{
+                    text-decoration: none;
+                    color: $color-2;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    position: relative;
+                }
+   
+            }
+        }
+
+
+        .logo{
+            max-width: 60px;
+            height: auto;
+        }
+    }
+}
+
+.menu-item::before{
+    content: "";
+    position: absolute;
+    bottom: -0.6rem;
+    width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, $color-3 0%, $color-4 100%);
+    opacity: 1;
+    border-radius: 10px;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+    @media screen and (max-width: 790px) {
+        bottom: 0rem;
+    }
+}
+
+.menu-item:hover::before{
+    transform-origin: 0 0;
+    transform: scaleX(1);
+    opacity: 1;
+}
+.contact-btn{
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-2;
+    background: linear-gradient(90deg, $color-3 0%, $color-4 100%);
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: .25rem;
+    outline: 1.5px solid transparent;
+    cursor: pointer;
+
+    &:hover{
+        color: $color-3;
+        background: #000;
+        outline: 1.5px solid $color-3;
+    }
+
+}
+
+.menu-btn{
+    fill: chartreuse;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: .25rem;
+    color: $color-2;
+    background: linear-gradient(90deg, $color-3 0%, $color-4 100%);
+    cursor: pointer;
+    line-height: 0;
+    transition: all .2s ease;
+    @media screen and (max-width: 790px) {
+        display: flex;
+    }
+
+    &:hover{
+        color: $color-3;
+        background: #000;
+        border: 1px solid $color-3;
+        fill: $color-2;
+    }
+
+}
