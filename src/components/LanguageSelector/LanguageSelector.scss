@@ -1,0 +1,115 @@
+@import "../../styles/App.scss";
+
+.btn-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    transition: 1s ease-in-out;
+    z-index: 1000;
+
+    @media screen and (max-width: 1200px) {
+        margin-right: 3rem;
+    }
+
+    .drop-globe {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .globe {
+            font-size: clamp(1rem, 1.5vw, 1.3rem);
+            color: $color-4;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .drop-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 140px;
+            width: 100%;
+            background: none;
+            min-height: 1.9rem;
+            padding: 0;
+            border-bottom: 1px solid $color-3;
+            // border-radius: 4px;
+            // box-shadow: 0 0 5px $color-9;
+            z-index: 1000;
+            transition: 1s ease-in-out;
+            margin-left: 5px;
+
+
+
+            .lang {
+                font-size: clamp(0.95rem, 1vw, 1rem);
+                color: $color-3;
+                font-weight: 500;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+            }
+
+            .drop-icon {
+                display: flex;
+
+                .chevron {
+                    cursor: pointer;
+                    font-size: 1.1rem;
+                    color: $color-3;
+                    transform: rotate(0deg);
+                    transition: 0.2s ease-in-out;
+
+
+                    &.arrowTop {
+                        transform: rotate(180deg);
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .lang-container {
+        position: absolute;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        min-width: 145px;
+        min-height: 1.9rem;
+        border-radius: 4px;
+        // overflow: hidden;
+
+        .drop-element {
+            background: $color-6;
+            color: $color-0;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left;
+            list-style-type: none;
+            padding: 0.3rem;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 0 5px $color-9;
+
+            &.selected {
+                background: $color-10;
+                color: $color-0;
+            }
+
+            &:hover {
+                background: $color-9;
+                color: $color-5;
+            }
+        }
+    }
+
+}

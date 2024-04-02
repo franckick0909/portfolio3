@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category": "cat2",
+    "name": "Sophie Bluel",
+    "image": "/src/assets/img/projects/sophie bluel/sophie bluel1.png",
+    "link": "/My-Portfolio/Projet1",
+    "active": "active",
+    "github": "https://github.com/franckick0909/Portfolio-architecte-Sophie-Bluel",
+    "url": "https://franckick0909.github.io/Portfolio-architecte-Sophie-Bluel/"
+  },
+  {
+    "id": 2,
+    "category": "cat3",
+    "name": "KASA",
+    "image": "/src/assets/img/projects/kasa/kasa1.png",
+    "link": "/My-Portfolio/Projet2",
+    "active": "active",
+    "github": "https://github.com/franckick0909/kasa-react",
+    "url": "https://franckick0909.github.io/kasa-react/"
+  },
+  {
+    "id": 3,
+    "category": "cat1",
+    "name": "OhmyFood",
+    "image": "/src/assets/img/projects/ohmyfood/ohmyfood1.png",
+    "link": "/My-Portfolio/Projet3",
+    "active": "active",
+    "github": "https://github.com/franckick0909/OhMyFood",
+    "url": "https://franckick0909.github.io/OhMyFood/"
+  },
+  {
+    "id": 4,
+    "category": "cat3",
+    "name": "MovieDB",
+    "image": "/src/assets/img/projects/moviedb/moviedb1.webp",
+    "link": "/My-Portfolio/Projet4",
+    "active": "active",
+    "github": "https://github.com/franckick0909/NetPrime2",
+    "url": "https://franckick0909.github.io/NetPrime2"
+  },
+  {
+    "id": 5,
+    "category": "cat2",
+    "name": "Portfolio #1",
+    "image": "/src/assets/img/projects/portfolio/portfolio1.png",
+    "link": "/My-Portfolio/Projet5",
+    "active": "active",
+    "github": "https://github.com/franckick0909/Portfolio2",
+    "url": "https://franckick0909.github.io/Portfolio2/"
+  },
+  {
+    "id": 6,
+    "category": "cat1",
+    "name": "CV",
+    "image": "/src/assets/img/projects/cv/CV.png",
+    "link": "/My-Portfolio/Projet6",
+    "active": "active",
+    "github": "https://github.com/franckick0909/CV",
+    "url": "https://franckick0909.github.io/CV/"
+  }
+]

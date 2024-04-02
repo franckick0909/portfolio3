@@ -1,0 +1,37 @@
+[
+  {
+    "heading": "Event 1",
+    "subheading": "Event 1 subheading",
+    "direcytion": "right"
+  },
+  {
+    "heading": "Event 2",
+    "subheading": "Event 2 subheading",
+    "direcytion": "left"
+  },
+  {
+    "heading": "Event 3",
+    "subheading": "Event 3 subheading",
+    "direcytion": "right"
+  },
+  {
+    "heading": "Event 4",
+    "subheading": "Event 4 subheading",
+    "direcytion": "left"
+  },
+  {
+    "heading": "Event 5",
+    "subheading": "Event 5 subheading",
+    "direcytion": "right"
+  },
+  {
+    "heading": "Event 6",
+    "subheading": "Event 6 subheading",
+    "direcytion": "left"
+  },
+  {
+    "heading": "Event 7",
+    "subheading": "Event 7 subheading",
+    "direcytion": "right"
+  }
+]

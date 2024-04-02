@@ -1,0 +1,64 @@
+[
+  {
+    "id": "1",
+    "icon": "https://franckick0909.github.io/My-Portfolio/src/assets/icons/html5.png",
+    "title": "HTML5",
+    "href": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5",
+    "category": "Front-end"
+  },
+  {
+    "id": "2",
+    "icon": "/src/assets/icons/css3.png",
+    "title": "CSS3",
+    "href": "https://developer.mozilla.org/pt-BR/docs/Web/CSS",
+    "category": "Front-end"
+  },
+  {
+    "id": "3",
+    "icon": "/src/assets/icons/js.png",
+    "title": "JavaScript",
+    "href": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+    "category": "Front-end"
+  },
+  {
+    "id": "4",
+    "icon": "/src/assets/icons/reactjs.png",
+    "title": "React",
+    "href": "https://pt-br.reactjs.org/",
+    "category": "React"
+  },
+  {
+    "id": "5",
+    "icon": "/src/assets/icons/nodejs.png",
+    "title": "NodeJS",
+    "href": "https://nodejs.org/en/",
+    "category": "Front-end"
+  },
+  {
+    "id": "6",
+    "icon": "/src/assets/icons/git.png",
+    "title": "Git",
+    "href": "https://git-scm.com/",
+    "category": "Front-end"
+  },
+  {
+    "id": "7",
+    "icon": "/src/assets/icons/figma.png",
+    "title": "Figma",
+    "href": "https://www.figma.com/",
+    "category": "Front-end"
+  },
+  {
+    "id": "8",
+    "icon": "/src/assets/icons/sass.png",
+    "title": "Sass",
+    "href": "https://sass-lang.com/",
+    "category": "Front-end"
+  },
+  {
+    "id": "9",
+    "icon": "/src/assets/icons/nextjs.png",
+    "title": "NextJS",
+    "href": "https://nextjs.org/"
+  }
+]

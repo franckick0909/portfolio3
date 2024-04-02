@@ -1,0 +1,12 @@
+@import "../../styles/App.scss";
+
+.logo {
+    font-size: clamp(2.1rem, 3.5vw, 3rem);
+    font-weight: 500;
+    color: $color-3;
+    font-family: $font-Whisper;
+
+    span {
+        color: $color-7;
+    }
+}

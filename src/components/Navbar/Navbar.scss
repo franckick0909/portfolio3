@@ -1,0 +1,40 @@
+@import "../../styles/App.scss";
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 860px) {
+        gap: 1rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+
+    .linktop {
+        font-family: $font-Syne;
+        font-size: clamp(0.95rem, 3vw, 1.1rem);
+        font-weight: 600;
+        color: $color-3;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &.active {
+            color: $color-5;
+        }
+
+        &.ok {
+            color: $color-5;
+
+        }
+
+        &:hover {
+            color: $color-7;
+            text-shadow: 0 0 10px $color-5;
+        }
+    }
+}

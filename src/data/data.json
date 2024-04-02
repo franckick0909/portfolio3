@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Home",
+    "link": "#Hero"
+  },
+  {
+    "name": "About",
+    "link": "#About"
+  },
+  {
+    "name": "Skills",
+    "link": "#Skills"
+  },
+  {
+    "name": "Portfolio",
+    "link": "#Portfolio"
+  },
+  {
+    "name": "Experience",
+    "link": "#Experience"
+  },
+  {
+    "name": "Contactez-moi",
+    "link": "#Contact"
+  }
+]
