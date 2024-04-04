@@ -1,0 +1,201 @@
+@import "../../styles/App.scss";
+
+.Experience {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, $color-1 30%, $color-12 100%);
+
+    .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5rem 1rem;
+        max-width: 1440px;
+
+        h1 {
+            font-size: clamp(6.5vh, 8vw, 30vh);
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $color-8;
+            font-family: $font-Rubik;
+            margin-bottom: 3rem;
+        }
+
+        .timeline {
+            position: relative;
+            width: 100%;
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 100%;
+                background: $color-7;
+                left: 50%;
+                top: 0;
+                transform: translateX(-50%);
+                z-index: 1;
+                animation: moveline 6s linear forwards;
+                border-radius: 5px;
+
+                @media screen and (max-width: 768px) {
+                    left: 31px;
+                }
+            }
+
+            &__container {
+                padding: 10px 50px;
+                position: relative;
+                width: 50%;
+                border-radius: 4px;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    padding-left: 80px;
+                    padding-right: 25px;
+                }
+
+
+                img {
+                    position: absolute;
+                    max-width: 2.8rem;
+                    max-height: 2.8rem;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    background: $color-1;
+                    right: -21px;
+                    top: 30px;
+                    z-index: 100;
+                    box-shadow: 0 1px 2px $color-9;
+                    transform: rotate(0);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                        box-shadow: 0 1px 4px $color-9;
+                    }
+
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem 2rem;
+                width: 100%;
+                background: $color-3;
+                position: relative;
+                border-radius: 4px;
+                text-align: left;
+                box-shadow: 3px 3px 3px 0 $color-9;
+                transition: box-shadow 0.3s ease;
+
+                &:hover {
+                    box-shadow: 3px 3px 22px 0 $color-9;
+                }
+
+                h2 {
+                    font-size: clamp(1.2rem, 3vw, 1.5rem);
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                small {
+                    font-size: clamp(0.9rem, 3vw, 1rem);
+                    font-weight: 500;
+                    color: $color-2;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: clamp(0.95rem, 3vw, 1.1rem);
+                    font-weight: 400;
+                    color: $color-7;
+                    margin-bottom: 10px;
+
+                    span {
+                        font-weight: 600;
+                        color: $color-1;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.left-container {
+    left: 2px;
+}
+
+.right-container {
+    left: 50%;
+
+    @media screen and (max-width: 768px) {
+        left: 0;
+    }
+
+    img {
+        left: -20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .left-container img,
+    .right-container img {
+        left: 8px;
+    }
+}
+
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    right: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid $color-3;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    left: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid $color-3;
+}
+
+@media screen and (max-width: 768px) {
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 15px solid $color-3;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}

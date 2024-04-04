@@ -1,0 +1,29 @@
+@import "../../styles/App.scss";
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.link {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-family: $font-Syne;
+    font-weight: 600;
+    color: $color-4;
+    display: flex;
+    transition: color 0.3s ease;
+
+
+    &.active {
+        color: $color-5;
+
+        &:hover {
+            color: $color-1;
+        }
+    }
+
+    &:hover {
+        color: $color-7;
+    }
+}
