@@ -37,7 +37,7 @@ const Form = () => {
       .send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
         if (response.status === 200) {
-          // alert("Message sent successfully", response);
+          
           handleOpenModal();
         } else {
           alert("Something went wrong, please try again later", response);
