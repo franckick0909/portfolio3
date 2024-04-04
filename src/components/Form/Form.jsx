@@ -1,9 +1,9 @@
 import "./Form.scss";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import emailjs from "emailjs-com";
-import { FaRocket, FaShuttleSpace } from "react-icons/fa6";
+import { FaShuttleSpace } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
+// import emailjs from "emailjs-com";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -16,66 +16,65 @@ const Form = () => {
     setMessage("");
   };
 
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalError, setModalError] = useState(false);
+  // const [modalOpen, setModalOpen] = useState(false);
+  // const [modalError, setModalError] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    const serviceID = "service_wmocscm";
-    const templateID = "template_l8qdthm";
-    const publicKey = "GGEp8YuEf9tv4MtGV";
+  //   const serviceID = "service_wmocscm";
+  //   const templateID = "template_l8qdthm";
+  //   const publicKey = "GGEp8YuEf9tv4MtGV";
 
-    const templateParams = {
-      from_name: name,
-      from_email: email,
-      to_name: "Franckick",
-      message: message,
-    };
+  //   const templateParams = {
+  //     from_name: name,
+  //     from_email: email,
+  //     to_name: "Franckick",
+  //     message: message,
+  //   };
 
-    emailjs
-      .send(serviceID, templateID, templateParams, publicKey)
-      .then((response) => {
-        if (response.status === 200) {
+  //   emailjs
+  //     .send(serviceID, templateID, templateParams, publicKey)
+  //     .then((response) => {
+  //       if (response.status === 200) {
           
-          handleOpenModal();
-        } else {
-          alert("Something went wrong, please try again later", response);
-          handleOpenModalError();
-        }
+  //         handleOpenModal();
+  //       } else {
+  //         alert("Something went wrong, please try again later", response);
+  //         handleOpenModalError();
+  //       }
 
-        setName("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch((error) => {
-        alert("Something went wrong, please try again later", error);
-        handleOpenModalError();
-      });
-  };
+  //       setName("");
+  //       setEmail("");
+  //       setMessage("");
+  //     })
+  //     .catch((error) => {
+  //       alert("Something went wrong, please try again later", error);
+  //       handleOpenModalError();
+  //     });
+  // };
 
-  const handleCloseModal = () => {
-    setModalOpen(false);
-    document.querySelector(".modal").exit();
-  };
-  const handleOpenModal = () => {
-    setModalOpen(true);
-  };
-  const handleCloseModalError = () => {
-    setModalError(false);
-    document.querySelector(".modal").exit();
-  };
-  const handleOpenModalError = () => {
-    setModalError(true);
-  };
+  // const handleCloseModal = () => {
+  //   setModalOpen(false);
+  //   document.querySelector(".modal").exit();
+  // };
+  // const handleOpenModal = () => {
+  //   setModalOpen(true);
+  // };
+  // const handleCloseModalError = () => {
+  //   setModalError(false);
+  //   document.querySelector(".modal").exit();
+  // };
+  // const handleOpenModalError = () => {
+  //   setModalError(true);
+  // };
 
   const { t } = useTranslation();
-  const { label1, label2, label3, btn1, btn2, success, error } = t("form");
+  const { label1, label2, label3, btn1, btn2 } = t("form");
 
   return (
     <>
       <motion.form
-        onSubmit={handleSubmit}
         className="formulaire"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -137,7 +136,7 @@ const Form = () => {
         </fieldset>
       </motion.form>
 
-      {modalOpen && (
+      {/* {modalOpen && (
         <motion.div
           className="modal"
           initial={{ opacity: 0, y: 100 }}
@@ -173,7 +172,7 @@ const Form = () => {
             </button>
           </div>
         </motion.div>
-      )}
+      )} */}
     </>
   );
 };
